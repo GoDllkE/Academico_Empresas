@@ -1,0 +1,55 @@
+#divSite{
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(0,0,0);
+}
+
+#divLogo, #divBanner, divLogin{
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(0,0,0);
+    height: 100px;
+}
+
+#divMenuLat, #divConteudo{
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(0,0,0);
+    min-height: 150px;
+    height: auto;
+}
+
+#divMenuSup{
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(0,0,0);
+    height: 50px;
+}
+
+#divAnuncio{
+    border-style: groove;
+    border-width: 1px;
+    border-color: #fff;
+    height: 180px;
+}
+
+#divTexto1, #divTexto2{
+    border-style: groove;
+    border-width: 1px;
+    border-color: #fff;
+    height: 250px;
+}
+
+#divInfo1, #divInfo2, #divInfo3, #divInfo4{
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(0,0,0);
+    height: 120px;
+}
+
+#divRodape{
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(0,0,0);
+    height: 125px;
+}
