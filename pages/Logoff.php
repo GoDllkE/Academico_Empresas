@@ -20,7 +20,10 @@
     $_SESSION['imagem']=null;
     $_SESSION['statusLogin']=3;
     $_SESSION['horaLogin']=null;
-    $_SESSION['msg']=null;
+    
+    // Viewbox 
+    $_SESSION['messageTitle']=null;
+    $_SESSION['messageContent']=null;
     
     // Destroy sessão
     session_destroy();
