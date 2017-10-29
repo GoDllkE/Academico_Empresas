@@ -14,9 +14,9 @@ Atualmente, está sendo desenvolvido sob o sistema operacional GNU Arch Linux, u
  
 Para configurar o ambiente para esta pagina web, pode utilizar esta guias da wiki oficial da 
 distribuição do Arch Linux.
-[Guia para configuração do PHP](https://wiki.archlinux.org/index.php/PHP)
-[Guia para configuração do servidor web](https://wiki.archlinux.org/index.php/Apache_HTTP_Server)
-[Guia para configuração do MySQL/MariaDB](https://wiki.archlinux.org/index.php/MySQL)
+- [Guia para configuração do PHP](https://wiki.archlinux.org/index.php/PHP)
+- [Guia para configuração do servidor web](https://wiki.archlinux.org/index.php/Apache_HTTP_Server)
+- [Guia para configuração do MySQL/MariaDB](https://wiki.archlinux.org/index.php/MySQL)
 
 ## Sobre
 Este projeto está sendo desenvolvido para a matéria 'Linguagem web I' na UnG - Universidade de Guarulhos.
