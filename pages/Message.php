@@ -1,11 +1,8 @@
 <?php
-if (!isset($_SESSION['statusLogin'])) {
-    // Do Nothing
-}else {
-
+if (isset($_SESSION['statusLogin'])) {
     if ($_SESSION['statusLogin'] == 2) {
-        $msg = "Login não encontrado... Tente novamente."; 
-        $classe = "alert alert-danger alert-dismissible fade show";
+        $_SESSION['messageTitle'] = "Erro";
+        $_SESSION['messageContent'] = "Login não encontrado... Tente novamente."; 
     } else if ($_SESSION['statusLogin'] == 1) {
         $msg = "Bem vindo novamente, ". $_SESSION['nome'];
         $classe = "alert alert-success alert-dismissible fade show";
