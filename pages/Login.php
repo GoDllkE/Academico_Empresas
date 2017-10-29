@@ -18,7 +18,11 @@
     
     if(mysqli_num_rows($rsLogin)==0){
         $_SESSION['statusLogin']=2;
-        $_SESSION['msg']="Dados Inválidos!";
+        
+        // Viewbox 
+        $_SESSION['messageTitle']="Dados Inválidos";
+        $_SESSION['messageContent']="Não foi possivel realizar o login, verifique as informações e tente novamente.";
+        header('location:./index.php?codPg=01?result');
     } else {
         $tblLogin = mysqli_fetch_array($rsLogin);
         $_SESSION['codigo']=$tblLogin['codigo'];
@@ -29,10 +33,13 @@
         $_SESSION['imagem']=$tblLogin['imagem'];
         $_SESSION['statusLogin']=1;
         $_SESSION['horaLogin']=date('d-m-y h:i');
-        $_SESSION['msg']="Bem vindo novamente, ".$_SESSION['nome']."!";
         
+        // Viewbox 
+        $_SESSION['messageTitle']="Bem vindo";
+        $_SESSION['messageContent']="Bem vindo novamente, ".$_SESSION['nome']."!";
+        header('location:./index.php?result'); 
     }
+    
     // Close mysql connection
     mysqli_close($conn);
-    header('location:./index.php'); 
 ?>
