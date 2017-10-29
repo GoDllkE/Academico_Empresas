@@ -8,6 +8,7 @@
         <script src="../src/js/popper.js"></script>
         <script src="../src/js/jquery-3.2.1.js"></script>
         <script src="../src/js/bootstrap.js"></script>
+        <script src="../src/js/bootstrap.bundle.js"></script>
         
         
         
@@ -41,7 +42,7 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <font color="white" >Regiões</font>
                     </a>
-                    <?php include "./Menu.php";?>
+                    <?php include "./menuRegioes.php";?>
                 </li>
                 <li class="nav-item">
                   <li class="nav-item dropdown">
@@ -100,14 +101,10 @@
         <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <!--senão houver a variável pg, faremos um include da home -->
-                        <?php
-                            if(!isset($_GET['codPg'])) {
-                                include './Message.php'; ?>
-                                <br>
-                            <?php
-                                include "./homeContent.php";
-                            } else {
+                        <!--senão houver a variável codPg, carrega padrão -->
+                        <?php if(!isset($_GET['codPg'])) { include "./homeContent.php"; ?>
+                        <br>
+                        <?php } else {
                                 $codPg=$_GET['codPg'];
                                 if($codPg==01){ include "./doLogin.php";}
                                 else if($codPg==10){ include "./FormEmpresa.php";}
