@@ -1,40 +1,27 @@
-<?php session_start();?> 
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        
-        <!-- (Opcional)Carregando Bootstrap/JQuery/JS da internet (Precisa de internet)  -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-        
-        
-        <!-- Carregando Bootstrap (Precisa de internet) -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-        </br></br></br>
-        <center><h3>Login</h3></center> 
-        <div style="width: 30%;margin-left: 36%;">
-            <form action="./Login.php" method="POST" name="FormLogin" enctype="multipart/form-data" class="form-group"> 
-                </br></br>
-                <div style="width: 90%" class="input-group">
-                    <span class="input-group-addon" id="sizing-addon1">@</span>
-                    <input type="text" class="form-control" name="html_email" placeholder="E-mail"/></p>
-                </div>    
-                </br>
-                <div style="width: 90%" class="input-group">
-                    <span class="input-group-addon" id="sizing-addon1">#</span>
-                    <input type="password" class="form-control" id="html_senha" name="html_senha" placeholder="Senha">
-                </div>  
-                </br>
-                <center>
-                    <input type="submit" id="enviar" style="width: 25%" class="btn btn-primary" value="Login">
-                </center>
-            </form>
-        </div>
-    </body>
-</html>
+<div class="box-parent-login" style="width: 75%;margin-left: 15%;">
+    <div class="well bg-white box-login">
+        <center>
+            <h1 class="ls-login-logo">Login</h1>
+        </center>
+        <br>
+        <form role="form" action="./Login.php" method="POST" name="FormLogin" class="form-group">
+            <fieldset>                
+                <div class="input-group ls-login-user">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" id="userEmail" name="html_email" placeholder="Ex: usuario@email.com" aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <div class="input-group ls-login-user">
+                    <span class="input-group-addon" id="basic-addon2">#</span>
+                    <input type="text" class="form-control" id="userEmail" type="password" name="html_senha" placeholder="Ex: 123456" aria-label="Senha" aria-describedby="basic-addon2">
+                </div>
+                <div  style="margin-top: 5px;"><a href="#">Esqueci a senha</a></div>
+                <br>
+                <input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
+                <p class="txt-center ls-login-signup" style="margin-top: 5px;">Não possui um login?
+                    <a href="#">Cadastre-se agora</a>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</div>
