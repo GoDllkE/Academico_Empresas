@@ -4,21 +4,33 @@
     <head>
         <meta charset="UTF-8">
 
-        <!-- (Opcional)Carregando Bootstrap/JQuery/JS da internet (Precisa de internet)  -->
+        <!-- Carregando funções JS pré compiladas do Bootstrap/JQuery/JS -->
+        <script src="../src/js/popper.js"></script>
+        <script src="../src/js/jquery-3.2.1.js"></script>
+        <script src="../src/js/bootstrap.js"></script>
+        
+        
+        
+        <!-- Carregando CSS do Bootstrap  -->
+        <link rel="stylesheet" href="../src/css/bootstrap.css" />
+        
+        <!-- Carregamento do CSS personalizado -->
+        <link rel="stylesheet" href="../src/css/Estilo.css" />
+        
+        <!-- Carregamento do JS personalizado 
+        <script src="../src/js/funcoes.js"></script>
+        -->
+        
+        <!-- [Network Required]
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-
-
-        <!-- Carregando Bootstrap (Precisa de internet) -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
-
-        <!-- Carregando funções JS
-        <script type="text/javascript" src="../src/js/funcoes.js" />
         -->
 
+        <!-- [ Network Required]
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        -->
     </head>
     <body>
         <!-- NavBar -->
