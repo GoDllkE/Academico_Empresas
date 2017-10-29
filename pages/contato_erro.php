@@ -14,5 +14,7 @@
         <h1>Erro</h1>
         <hr>
         <p>Houve um erro no envio da mensagem. <a href="index.php?codPg=<?=$codEmp?>">Tentar novamente</a>.</p>
+        <br>
+        <a href="./index.php"> Voltar a pagina inicial </a>
     </body>
 </html>
