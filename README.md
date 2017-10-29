@@ -22,3 +22,4 @@ distribuição do Arch Linux.
 Este projeto está sendo desenvolvido para a matéria 'Linguagem web I' na UnG - Universidade de Guarulhos.
 Atualmente, é um projeto da turma do 6º Semestre da qual estou auxiliando o grupo no desenvolvimento do mesmo 
 na oportunidade de aprimorar meus conhecimentos/praticas que já possuo.
+Está sendo utilizado a IDE Netbeans para auxiliar no desenvolvimento do mesmo.
