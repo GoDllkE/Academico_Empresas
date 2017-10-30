@@ -35,8 +35,8 @@ FLUSH PRIVILEGES;
 -- Tabela `categorias`
 --
 CREATE TABLE IF NOT EXISTS categorias (
-    codigoC   INT(11)       NOT NULL    PRIMARY KEY AUTO_INCREMENT,
-    nomeC     VARCHAR(60)   NOT NULL
+    codigo   INT(11)       NOT NULL    PRIMARY KEY AUTO_INCREMENT,
+    nome     VARCHAR(60)   NOT NULL
 ) 
 ENGINE=InnoDB;
 
@@ -60,8 +60,8 @@ ENGINE=InnoDB;
 
 -- Tabela `regioes`
 CREATE TABLE regioes (
-    codigoR   INT(11)       NOT NULL    PRIMARY KEY     AUTO_INDENT,
-    nomeR     VARCHAR(60)   NOT NULL
+    codigo   INT(11)       NOT NULL    PRIMARY KEY     AUTO_INDENT,
+    nome     VARCHAR(60)   NOT NULL
 ) 
 ENGINE=InnoDB;
 
